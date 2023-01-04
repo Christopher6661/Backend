@@ -1,0 +1,132 @@
+ERROR - 2022-11-29 11:06:22 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'recetapp', 3306, '', 0)
+#1 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\prog\APIRECETAPP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\prog\APIRECETAPP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\prog\APIRECETAPP\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\prog\APIRECETAPP\app\Controllers\API\Entradas.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\prog\APIRECETAPP\system\CodeIgniter.php(927): App\Controllers\API\Entradas->index()
+#8 C:\prog\APIRECETAPP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Entradas))
+#9 C:\prog\APIRECETAPP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\prog\APIRECETAPP\public\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 C:\prog\APIRECETAPP\system\Commands\Server\rewrite.php(46): require_once('C:\\prog\\APIRECE...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\prog\APIRECETAPP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\prog\APIRECETAPP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\prog\APIRECETAPP\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\prog\APIRECETAPP\app\Controllers\API\Entradas.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\prog\APIRECETAPP\system\CodeIgniter.php(927): App\Controllers\API\Entradas->index()
+#7 C:\prog\APIRECETAPP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Entradas))
+#8 C:\prog\APIRECETAPP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\prog\APIRECETAPP\public\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 C:\prog\APIRECETAPP\system\Commands\Server\rewrite.php(46): require_once('C:\\prog\\APIRECE...')
+#11 {main}
+CRITICAL - 2022-11-29 11:06:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `entradas`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\API\Entradas.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\API\Entradas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Entradas))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-29 11:06:32 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'recetapp', 3306, '', 0)
+#1 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\prog\APIRECETAPP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\prog\APIRECETAPP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\prog\APIRECETAPP\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\prog\APIRECETAPP\app\Controllers\API\Receta.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\prog\APIRECETAPP\system\CodeIgniter.php(927): App\Controllers\API\Receta->index()
+#8 C:\prog\APIRECETAPP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Receta))
+#9 C:\prog\APIRECETAPP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\prog\APIRECETAPP\public\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 C:\prog\APIRECETAPP\system\Commands\Server\rewrite.php(46): require_once('C:\\prog\\APIRECE...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\prog\APIRECETAPP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\prog\APIRECETAPP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\prog\APIRECETAPP\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\prog\APIRECETAPP\app\Controllers\API\Receta.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\prog\APIRECETAPP\system\CodeIgniter.php(927): App\Controllers\API\Receta->index()
+#7 C:\prog\APIRECETAPP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Receta))
+#8 C:\prog\APIRECETAPP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\prog\APIRECETAPP\public\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 C:\prog\APIRECETAPP\system\Commands\Server\rewrite.php(46): require_once('C:\\prog\\APIRECE...')
+#11 {main}
+CRITICAL - 2022-11-29 11:06:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `receta`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\API\Receta.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\API\Receta->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Receta))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-29 11:07:11 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'recetapp', 3306, '', 0)
+#1 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\prog\APIRECETAPP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\prog\APIRECETAPP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\prog\APIRECETAPP\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\prog\APIRECETAPP\app\Controllers\API\Receta.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\prog\APIRECETAPP\system\CodeIgniter.php(927): App\Controllers\API\Receta->index()
+#8 C:\prog\APIRECETAPP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Receta))
+#9 C:\prog\APIRECETAPP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\prog\APIRECETAPP\public\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 C:\prog\APIRECETAPP\system\Commands\Server\rewrite.php(46): require_once('C:\\prog\\APIRECE...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\prog\APIRECETAPP\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\prog\APIRECETAPP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\prog\APIRECETAPP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\prog\APIRECETAPP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\prog\APIRECETAPP\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\prog\APIRECETAPP\app\Controllers\API\Receta.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\prog\APIRECETAPP\system\CodeIgniter.php(927): App\Controllers\API\Receta->index()
+#7 C:\prog\APIRECETAPP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Receta))
+#8 C:\prog\APIRECETAPP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\prog\APIRECETAPP\public\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 C:\prog\APIRECETAPP\system\Commands\Server\rewrite.php(46): require_once('C:\\prog\\APIRECE...')
+#11 {main}
+CRITICAL - 2022-11-29 11:07:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `receta`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\API\Receta.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\API\Receta->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Receta))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
